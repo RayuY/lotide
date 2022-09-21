@@ -29,8 +29,7 @@ const middle = function (arr) {
   }
   return newArr;
 }
-
-
+// testtest
 // console.log(middle([1])) // => []
 // console.log(middle([1, 2])) // => []
 // console.log(middle([1, 2, 3])) // => [2]
