@@ -28,8 +28,9 @@ const letterPositions = function(str) {
       count[str[i]].push(i)
     }
   }
+  console.log(count);
   return count;
 };
 
 
-assertArraysEqual(letterPositions('lighthouse in the house').e, [9, 16, 22]);
+assertArraysEqual(letterPositions('lighthouse in the house'), [9, 16, 22]);

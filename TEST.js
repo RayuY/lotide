@@ -1,20 +1,25 @@
-
-var planetMoons = {
-  mercury: "",
-  venus: 0,
-  earth: 1,
-  mars: 2,
-  jupiter: 67,
-  saturn: 62,
-  uranus: 27,
-  neptune: 14
-};
-
-
-for (let planet in planetMoons) {
+function plusMinus(arr) {
+  // Write your code here
+  let positive = 0, negative = 0, zero = 0;
   
-  var numberOfMoons = planetMoons[planet];
-  if (planetMoons.hasOwnProperty(planet)) {
-  console.log("Planet: " + planet + ", # of Moons: "+ numberOfMoons);
-}
+  arr.forEach(element => {
+      if (element > 0) {
+          positive++;
+      }
+      if (element < 0) {
+          negative++;
+      }
+      if (element === 0) {
+          zero++;
+      }
+  })
+  
+  let positiveOcc = positve / arr.length
+  let negativeOcc = negative / arr.length
+  let zeroOcc = zero / arr.length
+  
+  console.log(positiveOcc);
+  console.log(negativeOcc);
+  console.log(zeroOcc);
+
 }
