@@ -29,22 +29,24 @@ const results2 = takeUntil(data2, x => x === ',');
 // ---------- test below 
 
 
-const assertArraysEqual = function (eqArrays) {
-  if (eqArrays === true) {
-    console.log("The two arrays are equal.")
-  } else {
-    console.log("The two arrays are different.")
-  } 
-};
+// const assertArraysEqual = function (eqArrays) {
+//   if (eqArrays === true) {
+//     console.log("The two arrays are equal.")
+//   } else {
+//     console.log("The two arrays are different.")
+//   } 
+// };
 
 
-const eqArrays = function (arrOne, arrTwo) {
-  if ((arrOne.length === arrTwo.length) && (arrOne.every((value, index) => value === arrTwo[index]))) {
-    return true;
-  } else {
-    return false;
-  } 
-};
+// const eqArrays = function (arrOne, arrTwo) {
+//   if ((arrOne.length === arrTwo.length) && (arrOne.every((value, index) => value === arrTwo[index]))) {
+//     return true;
+//   } else {
+//     return false;
+//   } 
+// };
 
-assertArraysEqual(eqArrays(results1, [ 1, 2, 5, 7, 2 ]));
-assertArraysEqual(eqArrays(results2, [ "I've", 'been', 'to', 'Hollywood' ]));
+// assertArraysEqual(eqArrays(results1, [ 1, 2, 5, 7, 2 ]));
+// assertArraysEqual(eqArrays(results2, [ "I've", 'been', 'to', 'Hollywood' ]));
+
+module.exports = takeUntil;

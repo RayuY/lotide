@@ -1,18 +1,4 @@
-const assertArraysEqual = function (eqArrays) {
-  if (eqArrays === true) {
-    console.log("The two arrays are equal.")
-  } else {
-    console.log("The two arrays are different.")
-  } 
-};
 
-const eqArrays = function (arrOne, arrTwo) {
-  if ((arrOne.length === arrTwo.length) && (arrOne.every((value, index) => value === arrTwo[index]))) {
-    return true;
-  } else {
-    return false;
-  } 
-};
 
 const letterPositions = function(str) {
   let count = {};
@@ -33,4 +19,6 @@ const letterPositions = function(str) {
 };
 
 
-assertArraysEqual(letterPositions('lighthouse in the house'), [9, 16, 22]);
+// assertArraysEqual(letterPositions('lighthouse in the house'), [9, 16, 22]);
+
+module.exports = letterPositions;

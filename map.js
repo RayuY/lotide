@@ -18,23 +18,25 @@ const results3 = map(cats, word => word[0])
 
 //--------------- test code below
 
-const assertArraysEqual = function (eqArrays) {
-  if (eqArrays === true) {
-    console.log("The two arrays are equal.")
-  } else {
-    console.log("The two arrays are different.")
-  } 
-};
+// const assertArraysEqual = function (eqArrays) {
+//   if (eqArrays === true) {
+//     console.log("The two arrays are equal.")
+//   } else {
+//     console.log("The two arrays are different.")
+//   } 
+// };
 
-const eqArrays = function (arrOne, arrTwo) {
-  if ((arrOne.length === arrTwo.length) && (arrOne.every((value, index) => value === arrTwo[index]))) {
-    return true;
-  } else {
-    return false;
-  } 
-};
+// const eqArrays = function (arrOne, arrTwo) {
+//   if ((arrOne.length === arrTwo.length) && (arrOne.every((value, index) => value === arrTwo[index]))) {
+//     return true;
+//   } else {
+//     return false;
+//   } 
+// };
 
 
-assertArraysEqual(eqArrays(results1, ['g','c','t','m','t']))
-assertArraysEqual(eqArrays(results2, [ 'k', 's', 'b' ]))
-assertArraysEqual(eqArrays(results3, [ 'f', 's', 'b' ]))
+// assertArraysEqual(eqArrays(results1, ['g','c','t','m','t']))
+// assertArraysEqual(eqArrays(results2, [ 'k', 's', 'b' ]))
+// assertArraysEqual(eqArrays(results3, [ 'f', 's', 'b' ]))
+
+module.exports = map;
